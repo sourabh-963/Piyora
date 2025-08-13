@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piora - Premium Juice & Shakes</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Splide Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="Piora Juice and Shakes Brand Logo - Image 4_20250811_222525_0000.png" alt="Piora Logo" style="height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hot-products">Hot Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Menu</a>
+                    </li> 
+                    <li class="nav-item">
+                         <a class="nav-link" href="#custom-drink">Make Your Drink</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#piora-family">Piora Family</a>
+                         </li>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link order-btn" href="#order">
+                            Order Now
+                        </a>
+                    </li>
+                    <li class="nav-item" id="loginNavItem">
+                        <a class="nav-link" href="#" id="loginBtn">Login</a>
+                    </li>
+                    <li class="nav-item" id="profileNavItem" style="display: none;">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                                <li><a class="dropdown-item" href="#profile">My Profile</a></li>
+                                <li><a class="dropdown-item" href="#profile-orders">My Orders</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" id="logoutBtn">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Piora</h1>
+                <h3 class="hero-subtitle">Pure Taste, Real Aura</h3>
+                <a href="#products" class="btn explore-btn">
+                    Explore Menu <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Products Carousel -->
+    <section id="hot-products" class="hot-products">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Bestsellers</h2>
+            <div class="splide" id="hot-products-carousel">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="hot-product-card">
+                                <img src="https://images.unsplash.com/photo-1551751299-1b51cab2694c?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" class="hot-product-img" alt="Tropical Juice">
+                                <div class="p-3">
+                                    <h5 class="mb-1">Tropical Sunrise</h5>
+                                    <p class="text-muted small mb-2">Mango, pineapple, orange</p>
+                                    <p class="text-success fw-bold mb-0">₹199</p>
+                                    <button class="btn btn-sm btn-primary w-100 mt-2 add-to-cart" 
+                                            data-product="Tropical Sunrise" 
+                                            data-price="199"
+                                            data-standard-price="179"
+                                            data-classic-price="199"
+                                            data-jumbo-price="229">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="hot-product-card">
+                                <img src="https://images.unsplash.com/photo-1579954115565-e08d58a9ec2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="hot-product-img" alt="Chocolate Shake">
+                                <div class="p-3">
+                                    <h5 class="mb-1">Choco Loco</h5>
+                                    <p class="text-muted small mb-2">Dark chocolate, almond milk</p>
+                                    <p class="text-success fw-bold mb-0">₹219</p>
+                                    <button class="btn btn-sm btn-primary w-100 mt-2 add-to-cart" 
+                                            data-product="Choco Loco" 
+                                            data-price="219"
+                                            data-standard-price="199"
+                                            data-classic-price="219"
+                                            data-jumbo-price="249">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Menu</h2>
+            
+            <div class="category-selector">
+                <button class="category-btn active" data-category="shakes">Shakes</button>
+                <button class="category-btn" data-category="juices">Juices</button>
+            </div>
+            
+            <!-- Shakes Category -->
+<div class="category-content active" id="shakes-content">
+    <div class="text-center mb-4">
+        <button class="subcategory-btn active" data-subcategory="icecream">Ice Cream Based</button>
+        <button class="subcategory-btn" data-subcategory="chocolate">Chocolate & Cookies</button>
+        <button class="subcategory-btn" data-subcategory="fruit">Fruit Based</button>
+    </div>
+    
+    <!-- Ice Cream Based -->
+    <div class="product-variants active" id="shakes-icecream-variants">
+                    <!-- Ice Cream Shakes -->
+                    <div class="variant-card">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="img-fluid" alt="Vanilla Shake">
+                        <div class="p-3">
+                            <h5>Vanilla Dream</h5>
+                            <p class="text-muted small">Premium vanilla ice cream with milk</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <p class="text-success fw-bold mb-0">₹199</p>
+                                <button class="btn btn-sm btn-primary add-to-cart"
+                                        data-product="Vanilla Dream" 
+                                        data-price="199"
+                                        data-standard-price="179"
+                                        data-classic-price="199"
+                                        data-jumbo-price="229">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Strawberry+Bliss" class="img-fluid" alt="Strawberry Bliss">
+        <div class="p-3">
+            <h5>Strawberry Bliss</h5>
+            <p class="text-muted small">Strawberry ice cream with fresh strawberries</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹219</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Strawberry Bliss" 
+                        data-price="219"
+                        data-standard-price="199"
+                        data-classic-price="219"
+                        data-jumbo-price="249">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Magnum+Delights" class="img-fluid" alt="Magnum Delights">
+        <div class="p-3">
+            <h5>Magnum Delights</h5>
+            <p class="text-muted small">Premium chocolate ice cream with almonds</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹239</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Magnum Delights" 
+                        data-price="239"
+                        data-standard-price="219"
+                        data-classic-price="239"
+                        data-jumbo-price="269">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Sahi+Kulfi" class="img-fluid" alt="Sahi Kulfi">
+        <div class="p-3">
+            <h5>Sahi Kulfi</h5>
+            <p class="text-muted small">Traditional kulfi with saffron and pistachio</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹229</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Sahi Kulfi" 
+                        data-price="229"
+                        data-standard-price="209"
+                        data-classic-price="229"
+                        data-jumbo-price="259">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Sahi+Rabdi" class="img-fluid" alt="Sahi Rabdi">
+        <div class="p-3">
+            <h5>Sahi Rabdi</h5>
+            <p class="text-muted small">Creamy rabdi with nuts and cardamom</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹249</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Sahi Rabdi" 
+                        data-price="249"
+                        data-standard-price="229"
+                        data-classic-price="249"
+                        data-jumbo-price="279">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-variants" id="shakes-chocolate-variants">
+                    <!-- Chocolate Shakes -->
+                    <div class="variant-card">
+                        <img src="https://images.unsplash.com/photo-1579954115565-e08d58a9ec2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="img-fluid" alt="Chocolate Shake">
+                        <div class="p-3">
+                            <h5>Choco Loco</h5>
+                            <p class="text-muted small">Dark chocolate with almond milk</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <p class="text-success fw-bold mb-0">₹219</p>
+                                <button class="btn btn-sm btn-primary add-to-cart"
+                                        data-product="Choco Loco" 
+                                        data-price="219"
+                                        data-standard-price="199"
+                                        data-classic-price="219"
+                                        data-jumbo-price="249">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Kitkat+Crunch" class="img-fluid" alt="Kitkat Crunch">
+        <div class="p-3">
+            <h5>Kitkat Crunch</h5>
+            <p class="text-muted small">Chocolate shake with crushed Kitkat</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹239</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Kitkat Crunch" 
+                        data-price="239"
+                        data-standard-price="219"
+                        data-classic-price="239"
+                        data-jumbo-price="269">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Snickers+Fusion" class="img-fluid" alt="Snickers Fusion">
+        <div class="p-3">
+            <h5>Snickers Fusion</h5>
+            <p class="text-muted small">Chocolate, caramel and nutty delight</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹249</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Snickers Fusion" 
+                        data-price="249"
+                        data-standard-price="229"
+                        data-classic-price="249"
+                        data-jumbo-price="279">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Dairy+Milk+Dream" class="img-fluid" alt="Dairy Milk Dream">
+        <div class="p-3">
+            <h5>Dairy Milk Dream</h5>
+            <p class="text-muted small">Creamy Dairy Milk chocolate shake</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹229</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Dairy Milk Dream" 
+                        data-price="229"
+                        data-standard-price="209"
+                        data-classic-price="229"
+                        data-jumbo-price="259">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Oreo+Blast" class="img-fluid" alt="Oreo Blast">
+        <div class="p-3">
+            <h5>Oreo Blast</h5>
+            <p class="text-muted small">Cookies and cream explosion</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹219</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Oreo Blast" 
+                        data-price="219"
+                        data-standard-price="199"
+                        data-classic-price="219"
+                        data-jumbo-price="249">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Choco+Bourbon" class="img-fluid" alt="Choco Bourbon">
+        <div class="p-3">
+            <h5>Choco Bourbon</h5>
+            <p class="text-muted small">Bourbon biscuit chocolate fusion</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹209</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Choco Bourbon" 
+                        data-price="209"
+                        data-standard-price="189"
+                        data-classic-price="209"
+                        data-jumbo-price="239">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-variants" id="shakes-fruit-variants">
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Mango+Mania" class="img-fluid" alt="Mango Mania">
+        <div class="p-3">
+            <h5>Mango Mania</h5>
+            <p class="text-muted small">Fresh mango pulp with ice cream</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹199</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Mango Mania" 
+                        data-price="199"
+                        data-standard-price="179"
+                        data-classic-price="199"
+                        data-jumbo-price="229">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Banana+Blast" class="img-fluid" alt="Banana Blast">
+        <div class="p-3">
+            <h5>Banana Blast</h5>
+            <p class="text-muted small">Creamy banana with honey</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹189</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Banana Blast" 
+                        data-price="189"
+                        data-standard-price="169"
+                        data-classic-price="189"
+                        data-jumbo-price="219">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Bel+Refresher" class="img-fluid" alt="Bel Refresher">
+        <div class="p-3">
+            <h5>Bel Refresher</h5>
+            <p class="text-muted small">Wood apple special with spices</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹179</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Bel Refresher" 
+                        data-price="179"
+                        data-standard-price="159"
+                        data-classic-price="179"
+                        data-jumbo-price="209">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Papaya+Power" class="img-fluid" alt="Papaya Power">
+        <div class="p-3">
+            <h5>Papaya Power</h5>
+            <p class="text-muted small">Papaya with honey and lime</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹169</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Papaya Power" 
+                        data-price="169"
+                        data-standard-price="149"
+                        data-classic-price="169"
+                        data-jumbo-price="199">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="variant-card">
+        <img src="https://via.placeholder.com/300x200?text=Chiku+Delight" class="img-fluid" alt="Chiku Delight">
+        <div class="p-3">
+            <h5>Chiku Delight (Seasonal)</h5>
+            <p class="text-muted small">Sapodilla with milk and nuts</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="text-success fw-bold mb-0">₹199</p>
+                <button class="btn btn-sm btn-primary add-to-cart"
+                        data-product="Chiku Delight" 
+                        data-price="199"
+                        data-standard-price="179"
+                        data-classic-price="199"
+                        data-jumbo-price="229">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Juices Category -->
+<div class="category-content" id="juices-content">
+    <div class="text-center mb-4">
+        <button class="subcategory-btn active" data-subcategory="fruit">Fruit & Vegetable</button>
+        <button class="subcategory-btn" data-subcategory="squash">Fruit Squash</button>
+    </div>
+    
+    <!-- Fruit & Vegetable -->
+    <div class="product-variants active" id="juices-fruit-variants">
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Tropical+Sunrise" class="img-fluid" alt="Tropical Juice">
+            <div class="p-3">
+                <h5>Tropical Sunrise</h5>
+                <p class="text-muted small">Mango, pineapple, orange</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹179</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Tropical Sunrise" 
+                            data-price="179"
+                            data-standard-price="159"
+                            data-classic-price="179"
+                            data-jumbo-price="209">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Pineapple+Punch" class="img-fluid" alt="Pineapple Punch">
+            <div class="p-3">
+                <h5>Pineapple Punch</h5>
+                <p class="text-muted small">Fresh pineapple with mint</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹169</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Pineapple Punch" 
+                            data-price="169"
+                            data-standard-price="149"
+                            data-classic-price="169"
+                            data-jumbo-price="199">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Mausmi+Magic" class="img-fluid" alt="Mausmi Magic">
+            <div class="p-3">
+                <h5>Mausmi Magic</h5>
+                <p class="text-muted small">Seasonal citrus fruits blend</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹159</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Mausmi Magic" 
+                            data-price="159"
+                            data-standard-price="139"
+                            data-classic-price="159"
+                            data-jumbo-price="189">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Pomegranate+Power" class="img-fluid" alt="Pomegranate Power">
+            <div class="p-3">
+                <h5>Pomegranate Power</h5>
+                <p class="text-muted small">Pure pomegranate with seeds</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹189</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Pomegranate Power" 
+                            data-price="189"
+                            data-standard-price="169"
+                            data-classic-price="189"
+                            data-jumbo-price="219">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Coconut+Relief" class="img-fluid" alt="Coconut Relief">
+            <div class="p-3">
+                <h5>Coconut Relief</h5>
+                <p class="text-muted small">Fresh coconut water with pulp</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹149</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Coconut Relief" 
+                            data-price="149"
+                            data-standard-price="129"
+                            data-classic-price="149"
+                            data-jumbo-price="179">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Mixed+Juice" class="img-fluid" alt="Mixed Juice">
+            <div class="p-3">
+                <h5>Mixed Juice</h5>
+                <p class="text-muted small">Assorted seasonal fruits blend</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹169</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Mixed Juice" 
+                            data-price="169"
+                            data-standard-price="149"
+                            data-classic-price="169"
+                            data-jumbo-price="199">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Fruit Squash -->
+    <div class="product-variants" id="juices-squash-variants">
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Mint+Masala" class="img-fluid" alt="Mint Masala">
+            <div class="p-3">
+                <h5>Mint Masala</h5>
+                <p class="text-muted small">Refreshing mint with Indian spices</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹159</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Mint Masala" 
+                            data-price="159"
+                            data-standard-price="139"
+                            data-classic-price="159"
+                            data-jumbo-price="189">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Orange+Burst" class="img-fluid" alt="Orange Burst">
+            <div class="p-3">
+                <h5>Orange Burst</h5>
+                <p class="text-muted small">Tangy orange with spices</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹149</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Orange Burst" 
+                            data-price="149"
+                            data-standard-price="129"
+                            data-classic-price="149"
+                            data-jumbo-price="179">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Himalayan+Buransh" class="img-fluid" alt="Himalayan Buransh">
+            <div class="p-3">
+                <h5>Himalayan Buransh</h5>
+                <p class="text-muted small">Rhododendron squash with honey</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹179</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Himalayan Buransh" 
+                            data-price="179"
+                            data-standard-price="159"
+                            data-classic-price="179"
+                            data-jumbo-price="209">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Kacha+Mango+Tango" class="img-fluid" alt="Kacha Mango Tango">
+            <div class="p-3">
+                <h5>Kacha Mango Tango</h5>
+                <p class="text-muted small">Raw mango with spices</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹139</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Kacha Mango Tango" 
+                            data-price="139"
+                            data-standard-price="119"
+                            data-classic-price="139"
+                            data-jumbo-price="169">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Amla+Active" class="img-fluid" alt="Amla Active">
+            <div class="p-3">
+                <h5>Amla Active</h5>
+                <p class="text-muted small">Indian gooseberry with herbs</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹169</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Amla Active" 
+                            data-price="169"
+                            data-standard-price="149"
+                            data-classic-price="169"
+                            data-jumbo-price="199">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Triphala+Twist" class="img-fluid" alt="Triphala Twist">
+            <div class="p-3">
+                <h5>Triphala Twist</h5>
+                <p class="text-muted small">Ayurvedic herbal blend</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹189</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Triphala Twist" 
+                            data-price="189"
+                            data-standard-price="169"
+                            data-classic-price="189"
+                            data-jumbo-price="219">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Watermelon+Wave" class="img-fluid" alt="Watermelon Wave">
+            <div class="p-3">
+                <h5>Watermelon Wave (Seasonal)</h5>
+                <p class="text-muted small">Fresh watermelon with mint</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹149</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Watermelon Wave" 
+                            data-price="149"
+                            data-standard-price="129"
+                            data-classic-price="149"
+                            data-jumbo-price="179">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="variant-card">
+            <img src="https://via.placeholder.com/300x200?text=Strawberry+Bliss" class="img-fluid" alt="Strawberry Bliss">
+            <div class="p-3">
+                <h5>Strawberry Bliss</h5>
+                <p class="text-muted small">Sweet strawberry squash</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p class="text-success fw-bold mb-0">₹179</p>
+                    <button class="btn btn-sm btn-primary add-to-cart"
+                            data-product="Strawberry Bliss" 
+                            data-price="179"
+                            data-standard-price="159"
+                            data-classic-price="179"
+                            data-jumbo-price="209">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    
+    <!-- ======= Make Your Drink Section ======= -->
+    <!-- ======= Make Your Drink Section ======= -->
+<section id="custom-drink" class="custom-drink-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Make Your Drink</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="custom-drink-card p-4 mb-4">
+                    <h4 class="mb-4">Create Your Custom Drink</h4>
+                    <form id="customDrinkForm">
+                        <div class="mb-3">
+                            <label class="form-label">Drink Type</label>
+                            <select class="form-select" id="drinkType">
+                                <option value="shake">Shake</option>
+                                <option value="juice">Juice</option>
+                                <option value="smoothie">Smoothie</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Base Ingredients</label>
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="milk">
+                                        <label class="form-check-label" for="milk">Milk</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="yogurt">
+                                        <label class="form-check-label" for="yogurt">Yogurt</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="water">
+                                        <label class="form-check-label" for="water">Water</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="coconutWater">
+                                        <label class="form-check-label" for="coconutWater">Coconut Water</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Fruits</label>
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="banana">
+                                        <label class="form-check-label" for="banana">Banana</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="strawberry">
+                                        <label class="form-check-label" for="strawberry">Strawberry</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="mango">
+                                        <label class="form-check-label" for="mango">Mango</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="apple">
+                                        <label class="form-check-label" for="apple">Apple</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="pineapple">
+                                        <label class="form-check-label" for="pineapple">Pineapple</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="kiwi">
+                                        <label class="form-check-label" for="kiwi">Kiwi</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Extras</label>
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="honey">
+                                        <label class="form-check-label" for="honey">Honey</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="protein">
+                                        <label class="form-check-label" for="protein">Protein Powder</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="chia">
+                                        <label class="form-check-label" for="chia">Chia Seeds</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="almonds">
+                                        <label class="form-check-label" for="almonds">Almonds</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Special Instructions</label>
+                            <textarea class="form-control" rows="3" placeholder="Any specific requests"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="custom-drink-preview p-4 text-center">
+                    <div class="preview-image mb-4">
+                        <img src="https://via.placeholder.com/300x300?text=Your+Drink+Preview" class="img-fluid rounded" alt="Custom Drink Preview">
+                    </div>
+                    <h4>Your Custom Creation</h4>
+                    <p class="text-muted">Select ingredients to see your drink come to life!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= Piora Family Section ======= -->
+<section id="piora-family" class="piora-family-section py-5">
+    <div class="container">
+        <h2 class="family-heading">Piora: Where Every Review Feels Like Family</h2>
+        <p class="family-subheading">Testimonials from the Heart of the Piora Family</p>
+        
+        <div class="splide" id="testimonials-carousel">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <!-- Testimonial 1 -->
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Rahul+S&background=4ECDC4&color=fff" class="rounded-circle me-3" width="60" alt="Rahul S">
+                                <div>
+                                    <h5 class="mb-0">Rahul S</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0">"The Tropical Sunrise juice is absolutely refreshing! Perfect balance of flavors and so fresh. My go-to drink after workouts."</p>
+                        </div>
+                    </li>
+                    
+                    <!-- Testimonial 2 -->
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Priya+M&background=FF6B6B&color=fff" class="rounded-circle me-3" width="60" alt="Priya M">
+                                <div>
+                                    <h5 class="mb-0">Priya M</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Choco Loco shake is heavenly! The perfect blend of chocolate and creaminess. My kids love it and I love that it's made with quality ingredients."</p>
+                        </div>
+                    </li>
+                    
+                    <!-- Testimonial 3 -->
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Arjun+K&background=292F36&color=fff" class="rounded-circle me-3" width="60" alt="Arjun K">
+                                <div>
+                                    <h5 class="mb-0">Arjun K</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0">"The custom drink option is a game-changer! Created my own protein-packed shake exactly how I wanted it. Delivery was super fast too!"</p>
+                        </div>
+                    </li>
+                    
+                    <!-- Testimonial 4 -->
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Neha+R&background=FF6B6B&color=fff" class="rounded-circle me-3" width="60" alt="Neha R">
+                                <div>
+                                    <h5 class="mb-0">Neha R</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0">"The Mint Masala squash is incredibly refreshing during hot summer days. Authentic flavors that remind me of homemade drinks!"</p>
+                        </div>
+                    </li>
+                    
+                    <!-- Testimonial 5 -->
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Rajiv+G&background=4ECDC4&color=fff" class="rounded-circle me-3" width="60" alt="Rajiv G">
+                                <div>
+                                    <h5 class="mb-0">Rajiv G</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0">"I'm a fitness enthusiast and the Protein Power custom shake has become my post-workout ritual. Fresh ingredients and perfect consistency every time!"</p>
+                        </div>
+                    </li>
+                    
+                    <!-- Testimonial 6 -->
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Sunita+P&background=292F36&color=fff" class="rounded-circle me-3" width="60" alt="Sunita P">
+                                <div>
+                                    <h5 class="mb-0">Sunita P</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0">"The Himalayan Buransh juice is not just delicious but also has medicinal value. Perfect for boosting immunity during season changes."</p>
+                        </div>
+                    </li>
+                    
+                    <!-- Testimonial 7 -->
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Vikram+D&background=FF6B6B&color=fff" class="rounded-circle me-3" width="60" alt="Vikram D">
+                                <div>
+                                    <h5 class="mb-0">Vikram D</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0">"The Kacha Mango Tango brings back childhood memories. Perfect balance of sweet and tangy. Highly recommended for mango lovers!"</p>
+                        </div>
+                    </li>
+                    
+                    <!-- Testimonial 8 -->
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Ananya+T&background=4ECDC4&color=fff" class="rounded-circle me-3" width="60" alt="Ananya T">
+                                <div>
+                                    <h5 class="mb-0">Ananya T</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Piora feels like family. Their customer service is exceptional and the Strawberry Bliss shake is to die for! Perfect treat after a long day."</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Order Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Place Your Order</h2>
+            
+            <div class="row">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="order-form-container p-4">
+                        <h4 class="mb-4">Delivery Details</h4>
+                        <form id="orderForm">
+                            <div id="loginRequiredMessage" class="alert alert-warning" style="display: none;">
+                                Please <a href="#" id="loginFromOrderBtn">login</a> to proceed with your order.
+                            </div>
+                            
+                            <div id="deliveryForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="fullName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phoneNumber" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Delivery Address</label>
+                                    <select class="form-select" id="deliveryAddress" required>
+                                        <option value="">Select Address</option>
+                                        <!-- Address options will be populated dynamically -->
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Delivery Time</label>
+                                    <select class="form-select" required>
+                                        <option value="">Select Time</option>
+                                        <option>ASAP (30-45 mins)</option>
+                                        <option>Within 1 hour</option>
+                                        <option>Schedule for later</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Special Instructions</label>
+                                    <textarea class="form-control" rows="2" placeholder="Any allergies or special requests"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <div class="order-form-container h-100">
+                        <div class="order-summary">
+                            <h4 class="mb-4">Your Order</h4>
+                            <div id="orderItems">
+                                <!-- Order items will be populated dynamically -->
+                                <div class="text-center py-4" id="emptyCartMessage">
+                                    <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+                                    <p>Your cart is empty</p>
+                                </div>
+                            </div>
+                            <div id="orderSummary" style="display: none;">
+                                <hr>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <p>Subtotal:</p>
+                                    <p id="subtotal">₹0</p>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <p>Delivery Fee:</p>
+                                    <p>₹30</p>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <p>Taxes:</p>
+                                    <p id="taxes">₹0</p>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between">
+                                    <h5>Total:</h5>
+                                    <h5 id="total">₹30</h5>
+                                </div>
+                                <div class="payment-methods">
+    <h5 class="mt-4 mb-3">Payment Method</h5>
+    
+    <!-- QR Code Option -->
+    <div class="payment-option active">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="payment" id="qrCode" checked>
+            <label class="form-check-label" for="qrCode">
+                UPI QR Code
+            </label>
+        </div>
+        <div class="option-content">
+            <div class="qr-code">
+                <img src="https://via.placeholder.com/150x150?text=UPI+QR+Code" alt="UPI QR Code" class="img-fluid">
+                <p class="small mt-2 mb-1">Scan to pay via any UPI app</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- UPI ID Option -->
+    <div class="payment-option">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="payment" id="upiId">
+            <label class="form-check-label" for="upiId">
+                UPI ID Payment
+            </label>
+        </div>
+        <div class="option-content">
+            <div class="upi-details">
+                <p class="small mb-1">Send payment to our UPI ID:</p>
+                <p class="upi-id">piorajuice@upi</p>
+                <p class="small">(Piora Juice & Shakes Pvt. Ltd.)</p>
+                <div class="form-group mt-2">
+                    <label class="small">Your UPI ID for receipt:</label>
+                    <input type="text" class="form-control" placeholder="yourname@upi">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- COD Option -->
+    <div class="payment-option">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="payment" id="cod">
+            <label class="form-check-label" for="cod">
+                Cash on Delivery (50% Token Amount)
+            </label>
+        </div>
+        <div class="option-content">
+            <p class="small text-muted mt-2">Pay 50% now via UPI, remaining on delivery</p>
+            <div class="upi-details mt-2">
+                <p class="small mb-1">Send 50% token to our UPI ID:</p>
+                <p class="upi-id">piorajuice@upi</p>
+                               <button type="submit" form="orderForm" class="btn btn-primary w-100 mt-4 py-2" id="placeOrderBtn">
+                                    Confirm & Place Order <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile-section">
+        <div class="container">
+            <div class="profile-container">
+                <div class="row g-0">
+                    <div class="col-lg-3">
+                        <div class="profile-sidebar">
+                            <div class="text-center mb-4">
+                                <div class="position-relative d-inline-block">
+                                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=ff6b6b&color=fff&size=100" class="rounded-circle mb-2" alt="Profile" width="100">
+                                    <button class="btn btn-sm btn-primary position-absolute bottom-0 end-0 rounded-circle" style="width: 30px; height: 30px;">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                </div>
+                                <h5 class="mt-2 mb-1" id="profileName">John Doe</h5>
+                                <p class="text-muted small" id="profilePhone">+91 9876543210</p>
+                            </div>
+                            
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#profile-details">
+                                        <i class="fas fa-user me-2"></i> Personal Details
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#profile-addresses">
+                                        <i class="fas fa-map-marker-alt me-2"></i> My Addresses
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#profile-orders">
+                                        <i class="fas fa-shopping-bag me-2"></i> My Orders
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#profile-rewards">
+                                        <i class="fas fa-gift me-2"></i> Rewards & Coupons
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#profile-refer">
+                                        <i class="fas fa-user-plus me-2"></i> Refer & Earn
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="profile-content">
+                            <!-- Personal Details -->
+                            <div id="profile-details" class="profile-tab">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h4>Personal Details</h4>
+                                    <button class="btn btn-sm btn-primary" id="editProfileBtn">Edit</button>
+                                </div>
+                                
+                                <div class="profile-card">
+                                    <form id="profileForm">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Full Name</label>
+                                                <input type="text" class="form-control" id="profileFullName" readonly>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Email</label>
+                                                                              <input type="email" class="form-control" id="profileEmail" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Phone Number</label>
+                                                <input type="tel" class="form-control" id="profilePhoneInput" readonly>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Date of Birth</label>
+                                                <input type="date" class="form-control" id="profileDOB" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="d-none" id="profileEditButtons">
+                                            <button type="button" class="btn btn-secondary me-2" id="cancelProfileEdit">Cancel</button>
+                                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <!-- Addresses -->
+                            <div id="profile-addresses" class="profile-tab" style="display: none;">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h4>My Addresses</h4>
+                                    <button class="btn btn-primary" id="addAddressBtn">
+                                        <i class="fas fa-plus me-2"></i> Add New Address
+                                    </button>
+                                </div>
+                                
+                                <div class="row" id="addressList">
+                                    <!-- Address cards will be populated dynamically -->
+                                    <div class="col-md-6">
+                                        <div class="address-card default">
+                                            <h5>Home</h5>
+                                            <p>123 Main Street, Apt 4B<br>Mumbai, Maharashtra 400001</p>
+                                            <p class="mb-1"><strong>Phone:</strong> +91 9876543210</p>
+                                            <div class="address-actions">
+                                                <button class="btn btn-sm btn-outline-primary me-1 edit-address">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger delete-address">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Add/Edit Address Modal -->
+                                <div class="modal fade" id="addressModal" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="addressModalTitle">Add New Address</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form id="addressForm">
+                                                    <input type="hidden" id="addressId">
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Address Type</label>
+                                                        <select class="form-select" id="addressType" required>
+                                                            <option value="Home">Home</option>
+                                                            <option value="Work">Work</option>
+                                                            <option value="Other">Other</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Full Address</label>
+                                                        <textarea class="form-control" id="addressText" rows="3" required></textarea>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <label class="form-label">City</label>
+                                                            <input type="text" class="form-control" id="addressCity" required>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <label class="form-label">Pincode</label>
+                                                            <input type="text" class="form-control" id="addressPincode" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" id="setDefaultAddress">
+                                                        <label class="form-check-label" for="setDefaultAddress">
+                                                            Set as default address
+                                                        </label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                <button type="submit" form="addressForm" class="btn btn-primary">Save Address</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Orders -->
+                            <div id="profile-orders" class="profile-tab" style="display: none;">
+                                <h4 class="mb-4">My Orders</h4>
+                                
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Order ID</th>
+                                                <th>Date</th>
+                                                <th>Items</th>
+                                                <th>Amount</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="orderHistory">
+                                            <!-- Order history will be populated dynamically -->
+                                            <tr>
+                                                <td>#PI20230812</td>
+                                                <td>12 Aug 2023</td>
+                                                <td>Choco Loco, Tropical Sunrise</td>
+                                                <td>₹398</td>
+                                                <td><span class="order-status status-delivered">Delivered</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="Piora Juice and Shakes Brand Logo - Image 4_20250811_222525_0000.png" alt="Piora Logo" style="height: 50px;" class="mb-3">
+                    <p class="mb-0">Premium juice and shakes made with fresh ingredients and delivered to your doorstep.</p>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#hot-products" class="text-white text-decoration-none">Hot Products</a></li>
+                        <li class="mb-2"><a href="#products" class="text-white text-decoration-none">Menu</a></li>
+                        <li class="mb-2"><a href="#order" class="text-white text-decoration-none">Order Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Juice St, Mumbai</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +91 98765 43210</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> hello@piorajuice.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Download App</h5>
+                        <div class="d-flex gap-2">
+                            <a href="#"><img src="https://via.placeholder.com/120x40?text=App+Store" alt="App Store" class="img-fluid"></a>
+                            <a href="#"><img src="https://via.placeholder.com/120x40?text=Play+Store" alt="Play Store" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Piora Juice & Shakes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-btns">
+        <a href="https://wa.me/919876543210" class="floating-btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <button class="floating-btn cart-btn" id="cartFloatingBtn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </button>
+    </div>
+
+    <!-- Size Selection Modal -->
+    <div class="size-modal" id="sizeModal">
+        <div class="size-modal-content">
+            <h4 class="mb-4" id="sizeModalTitle">Select Size</h4>
+            <div id="sizeOptions">
+                <!-- Size options will be added dynamically -->
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-outline-secondary" id="cancelSizeSelection">Cancel</button>
+                <button class="btn btn-primary" id="confirmSizeSelection">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-modal-content">
+            <div class="login-tabs">
+                <div class="login-tab active" data-tab="login">Login</div>
+                <div class="login-tab" data-tab="signup">Sign Up</div>
+            </div>
+            
+            <!-- Login Form -->
+            <form class="login-form active" id="loginForm">
+                <div class="mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <div class="input-group">
+                        <span class="input-group-text">+91</span>
+                        <input type="tel" class="form-control" id="loginPhone" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" id="loginPassword" required>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <a href="#" class="text-decoration-none small">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+                
+                <button type="button" class="google-login-btn">
+                    <i class="fab fa-google"></i> Sign in with Google
+                </button>
+            </form>
+            
+            <!-- Signup Form -->
+            <form class="login-form" id="signupForm">
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="signupName" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <div class="input-group">
+                        <span class="input-group-text">+91</span>
+                        <input type="tel" class="form-control" id="signupPhone" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email (Optional)</label>
+                    <input type="email" class="form-control" id="signupEmail">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" id="signupPassword" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="signupConfirmPassword" required>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="termsAgreement" required>
+                    <label class="form-check-label" for="termsAgreement">
+                        I agree to the <a href="#" class="text-decoration-none">Terms & Conditions</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                
+                <button type="button" class="google-login-btn">
+                    <i class="fab fa-google"></i> Sign up with Google
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Splide Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    
+<script>
+    // Initialize Splide Carousel
+    document.addEventListener('DOMContentLoaded', function() {
+        new Splide('#hot-products-carousel', {
+            type: 'loop',
+            perPage: 3,
+            perMove: 1,
+            gap: '20px',
+            pagination: false,
+            breakpoints: {
+                992: {
+                    perPage: 2
+                },
+                768: {
+                    perPage: 1
+                }
+            }
+        }).mount();
+    });
+
+    // Initialize Bootstrap components
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    const tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Cart functionality
+    let cart = JSON.parse(localStorage.getItem('pioraCart')) || [];
+    const cartCount = document.querySelector('.cart-count');
+    const cartFloatingBtn = document.getElementById('cartFloatingBtn');
+    const orderItems = document.getElementById('orderItems');
+    const emptyCartMessage = document.getElementById('emptyCartMessage');
+    const orderSummary = document.getElementById('orderSummary');
+    const subtotalEl = document.getElementById('subtotal');
+    const taxesEl = document.getElementById('taxes');
+    const totalEl = document.getElementById('total');
+    const placeOrderBtn = document.getElementById('placeOrderBtn');
+    const loginRequiredMessage = document.getElementById('loginRequiredMessage');
+    const loginFromOrderBtn = document.getElementById('loginFromOrderBtn');
+    
+    // Size selection modal
+    const sizeModal = document.getElementById('sizeModal');
+    const sizeOptions = document.getElementById('sizeOptions');
+    const confirmSizeSelection = document.getElementById('confirmSizeSelection');
+    const cancelSizeSelection = document.getElementById('cancelSizeSelection');
+    let selectedProduct = null;
+    
+    // Login modal
+    const loginModal = document.getElementById('loginModal');
+    const loginBtn = document.getElementById('loginBtn');
+    const loginTabs = document.querySelectorAll('.login-tab');
+    const loginForms = document.querySelectorAll('.login-form');
+    
+    // Profile elements
+    const profileNavItem = document.getElementById('profileNavItem');
+    const loginNavItem = document.getElementById('loginNavItem');
+    const logoutBtn = document.getElementById('logoutBtn');
+    const profileSection = document.querySelector('.profile-section');
+    const profileName = document.getElementById('profileName');
+    const profilePhone = document.getElementById('profilePhone');
+    const profileFullName = document.getElementById('profileFullName');
+    const profileEmail = document.getElementById('profileEmail');
+    const profilePhoneInput = document.getElementById('profilePhoneInput');
+    const profileDOB = document.getElementById('profileDOB');
+    const editProfileBtn = document.getElementById('editProfileBtn');
+    const profileForm = document.getElementById('profileForm');
+    const profileEditButtons = document.getElementById('profileEditButtons');
+    const cancelProfileEdit = document.getElementById('cancelProfileEdit');
+    
+    // Address management
+    const addAddressBtn = document.getElementById('addAddressBtn');
+    const addressModal = new bootstrap.Modal(document.getElementById('addressModal'));
+    const addressForm = document.getElementById('addressForm');
+    const addressList = document.getElementById('addressList');
+    const deliveryAddress = document.getElementById('deliveryAddress');
+    
+    // User state
+    let currentUser = JSON.parse(localStorage.getItem('pioraUser')) || null;
+    
+    // Update cart count
+    function updateCartCount() {
+        const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCount.textContent = count;
+        cartCount.style.display = count > 0 ? 'flex' : 'none';
+    }
+    
+    // Render cart items
+    function renderCartItems() {
+        if (cart.length === 0) {
+            emptyCartMessage.style.display = 'block';
+            orderSummary.style.display = 'none';
+            return;
+        }
+        
+        emptyCartMessage.style.display = 'none';
+        orderSummary.style.display = 'block';
+        
+        orderItems.innerHTML = '';
+        let subtotal = 0;
+        
+        cart.forEach((item, index) => {
+            const itemEl = document.createElement('div');
+            itemEl.className = 'd-flex justify-content-between align-items-center mb-3';
+            itemEl.innerHTML = `
+                <div>
+                    <h6 class="mb-1">${item.name} (${item.size})</h6>
+                    <p class="text-muted small mb-0">₹${item.price} × ${item.quantity}</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <span class="me-3">₹${item.price * item.quantity}</span>
+                    <button class="btn btn-sm btn-outline-danger remove-from-cart" data-index="${index}">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            `;
+            orderItems.appendChild(itemEl);
+            
+            subtotal += item.price * item.quantity;
+        });
+        
+        const taxes = subtotal * 0.05;
+        const total = subtotal + taxes + 30;
+        
+        subtotalEl.textContent = `₹${subtotal}`;
+        taxesEl.textContent = `₹${taxes.toFixed(2)}`;
+        totalEl.textContent = `₹${total.toFixed(2)}`;
+    }
+    
+    // Add to cart with size selection
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.add-to-cart')) {
+            const button = e.target.closest('.add-to-cart');
+            selectedProduct = {
+                name: button.dataset.product,
+                standardPrice: parseFloat(button.dataset.standardPrice),
+                classicPrice: parseFloat(button.dataset.classicPrice),
+                jumboPrice: parseFloat(button.dataset.jumboPrice),
+                price: parseFloat(button.dataset.price),
+                size: 'Classic'
+            };
+            
+            // Show size selection modal
+            sizeOptions.innerHTML = `
+                <div class="size-option" data-size="Standard" data-price="${selectedProduct.standardPrice}">
+                    <div>
+                        <h6>Standard</h6>
+                        <p class="small mb-0">12oz / 350ml</p>
+                    </div>
+                    <div class="price">₹${selectedProduct.standardPrice}</div>
+                </div>
+                <div class="size-option selected" data-size="Classic" data-price="${selectedProduct.classicPrice}">
+                    <div>
+                        <h6>Classic</h6>
+                        <p class="small mb-0">16oz / 470ml</p>
+                    </div>
+                    <div class="price">₹${selectedProduct.classicPrice}</div>
+                </div>
+                <div class="size-option" data-size="Jumbo" data-price="${selectedProduct.jumboPrice}">
+                    <div>
+                        <h6>Jumbo</h6>
+                        <p class="small mb-0">24oz / 700ml</p>
+                    </div>
+                    <div class="price">₹${selectedProduct.jumboPrice}</div>
+                </div>
+            `;
+            
+            document.getElementById('sizeModalTitle').textContent = `Select Size for ${selectedProduct.name}`;
+            sizeModal.style.display = 'flex';
+        }
+    });
+    
+    // Size selection
+    sizeOptions.addEventListener('click', function(e) {
+        if (e.target.closest('.size-option')) {
+            const sizeOption = e.target.closest('.size-option');
+            document.querySelectorAll('.size-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            sizeOption.classList.add('selected');
+            selectedProduct.size = sizeOption.dataset.size;
+            selectedProduct.price = parseFloat(sizeOption.dataset.price);
+        }
+    });
+    
+    // Confirm size selection
+    confirmSizeSelection.addEventListener('click', function() {
+        // Check if item already in cart
+        const existingIndex = cart.findIndex(item => 
+            item.name === selectedProduct.name && 
+            item.size === selectedProduct.size
+        );
+        
+        if (existingIndex !== -1) {
+            cart[existingIndex].quantity++;
+        } else {
+            cart.push({
+                ...selectedProduct,
+                quantity: 1
+            });
+        }
+        
+        localStorage.setItem('pioraCart', JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+        sizeModal.style.display = 'none';
+        
+        // Show success message
+        showToast(`${selectedProduct.name} added to cart!`);
+    });
+    
+    // Cancel size selection
+    cancelSizeSelection.addEventListener('click', function() {
+        sizeModal.style.display = 'none';
+    });
+    
+    // Remove from cart
+    orderItems.addEventListener('click', function(e) {
+        if (e.target.closest('.remove-from-cart')) {
+            const index = e.target.closest('.remove-from-cart').dataset.index;
+            cart.splice(index, 1);
+            localStorage.setItem('pioraCart', JSON.stringify(cart));
+            updateCartCount();
+            renderCartItems();
+        }
+    });
+    
+    // Show toast notification
+    function showToast(message) {
+        // Create toast container if it doesn't exist
+        let toastContainer = document.getElementById('toastContainer');
+        if (!toastContainer) {
+            toastContainer = document.createElement('div');
+            toastContainer.id = 'toastContainer';
+            toastContainer.style.position = 'fixed';
+            toastContainer.style.bottom = '20px';
+            toastContainer.style.left = '50%';
+            toastContainer.style.transform = 'translateX(-50%)';
+            toastContainer.style.zIndex = '2000';
+            document.body.appendChild(toastContainer);
+        }
+        
+        // Create toast
+        const toast = document.createElement('div');
+        toast.className = 'toast bg-success text-white p-3 rounded';
+        toast.textContent = message;
+        toast.style.opacity = '0';
+        toast.style.transition = 'opacity 0.3s';
+        toastContainer.appendChild(toast);
+        
+        // Show toast
+        setTimeout(() => {
+            toast.style.opacity = '1';
+        }, 10);
+        
+        // Hide after delay
+        setTimeout(() => {
+            toast.style.opacity = '0';
+            setTimeout(() => {
+                toast.remove();
+            }, 300);
+        }, 3000);
+    }
+    
+    // Initialize cart
+    updateCartCount();
+    renderCartItems();
+    
+    // Floating cart button click
+    cartFloatingBtn.addEventListener('click', function() {
+        document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+    });
+    
+    // Login functionality
+    loginBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        loginModal.style.display = 'flex';
+    });
+    
+    // Login tabs
+    loginTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const tabName = this.dataset.tab;
+            
+            loginTabs.forEach(t => t.classList.remove('active'));
+            loginForms.forEach(form => form.classList.remove('active'));
+            
+            this.classList.add('active');
+            document.getElementById(`${tabName}Form`).classList.add('active');
+        });
+    });
+    
+    // Close login modal when clicking outside
+    loginModal.addEventListener('click', function(e) {
+        if (e.target === loginModal) {
+            loginModal.style.display = 'none';
+        }
+    });
+    
+    // Login form submission
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // In a real app, you would validate credentials with a backend
+        const phone = document.getElementById('loginPhone').value;
+        
+        // Create user object
+        currentUser = {
+            id: 'user_' + Date.now(),
+            phone: phone,
+            name: 'User ' + phone.substring(phone.length - 4),
+            email: '',
+            addresses: [
+                {
+                    id: 'addr_1',
+                    type: 'Home',
+                    address: '123 Main Street, Apt 4B',
+                    city: 'Mumbai',
+                    pincode: '400001',
+                    phone: '+91' + phone,
+                    default: true
+                }
+            ],
+            orders: []
+        };
+        
+        // Save user to localStorage
+        localStorage.setItem('pioraUser', JSON.stringify(currentUser));
+        
+        // Update UI
+        updateUserState();
+        
+        // Close modal
+        loginModal.style.display = 'none';
+        
+        // Show success message
+        showToast('Logged in successfully!');
+    });
+    
+    // Signup form submission
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const phone = document.getElementById('signupPhone').value;
+        const name = document.getElementById('signupName').value;
+        
+        // Create user object
+        currentUser = {
+            id: 'user_' + Date.now(),
+            phone: phone,
+            name: name,
+            email: document.getElementById('signupEmail').value || '',
+            addresses: [],
+            orders: []
+        };
+        
+        // Save user to localStorage
+        localStorage.setItem('pioraUser', JSON.stringify(currentUser));
+        
+        // Update UI
+        updateUserState();
+        
+        // Close modal
+        loginModal.style.display = 'none';
+        
+        // Show success message
+        showToast('Account created successfully!');
+    });
+    
+    // Logout functionality
+    logoutBtn.addEventListener('click', function() {
+        currentUser = null;
+        localStorage.removeItem('pioraUser');
+        updateUserState();
+        showToast('Logged out successfully');
+    });
+    
+    // Update UI based on user state
+    function updateUserState() {
+        if (currentUser) {
+            loginNavItem.style.display = 'none';
+            profileNavItem.style.display = 'block';
+            
+            // Update profile info
+            profileName.textContent = currentUser.name;
+            profilePhone.textContent = currentUser.phone;
+            profileFullName.value = currentUser.name;
+            profileEmail.value = currentUser.email || '';
+            profilePhoneInput.value = currentUser.phone;
+            
+            // Populate addresses
+            renderAddresses();
+            
+            // Enable order form
+            loginRequiredMessage.style.display = 'none';
+        } else {
+            loginNavItem.style.display = 'block';
+            profileNavItem.style.display = 'none';
+            profileSection.style.display = 'none';
+            
+            // Disable order form
+            loginRequiredMessage.style.display = 'block';
+        }
+    }
+    
+    // Initialize user state
+    updateUserState();
+    
+    // Edit profile functionality
+    editProfileBtn.addEventListener('click', function() {
+        const inputs = profileForm.querySelectorAll('input');
+        inputs.forEach(input => input.removeAttribute('readonly'));
+        profileEditButtons.classList.remove('d-none');
+        editProfileBtn.classList.add('d-none');
+    });
+    
+    cancelProfileEdit.addEventListener('click', function() {
+        const inputs = profileForm.querySelectorAll('input');
+        inputs.forEach(input => input.setAttribute('readonly', 'true'));
+        profileEditButtons.classList.add('d-none');
+        editProfileBtn.classList.remove('d-none');
+        
+        // Reset values
+        profileFullName.value = currentUser.name;
+        profileEmail.value = currentUser.email || '';
+        profilePhoneInput.value = currentUser.phone;
+    });
+    
+    // Save profile changes
+    profileForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        currentUser.name = profileFullName.value;
+        currentUser.email = profileEmail.value;
+        localStorage.setItem('pioraUser', JSON.stringify(currentUser));
+        
+        // Update UI
+        profileName.textContent = currentUser.name;
+        profileFullName.value = currentUser.name;
+        profileEmail.value = currentUser.email || '';
+        
+        // Disable editing
+        const inputs = profileForm.querySelectorAll('input');
+        inputs.forEach(input => input.setAttribute('readonly', 'true'));
+        profileEditButtons.classList.add('d-none');
+        editProfileBtn.classList.remove('d-none');
+        
+        showToast('Profile updated successfully');
+    });
+    
+    // Address management
+    addAddressBtn.addEventListener('click', function() {
+        // Reset form
+        addressForm.reset();
+        document.getElementById('addressId').value = '';
+        document.getElementById('addressModalTitle').textContent = 'Add New Address';
+        addressModal.show();
+    });
+    
+    // Save address
+    addressForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const addressId = document.getElementById('addressId').value;
+        const addressData = {
+            id: addressId || 'addr_' + Date.now(),
+            type: document.getElementById('addressType').value,
+            address: document.getElementById('addressText').value,
+            city: document.getElementById('addressCity').value,
+            pincode: document.getElementById('addressPincode').value,
+            default: document.getElementById('setDefaultAddress').checked
+        };
+        
+        if (addressId) {
+            // Update existing address
+            const index = currentUser.addresses.findIndex(addr => addr.id === addressId);
+            if (index !== -1) {
+                currentUser.addresses[index] = addressData;
+            }
+        } else {
+            // Add new address
+            currentUser.addresses.push(addressData);
+        }
+        
+        // If set as default, mark others as non-default
+        if (addressData.default) {
+            currentUser.addresses.forEach(addr => {
+                if (addr.id !== addressData.id) {
+                    addr.default = false;
+                }
+            });
+        } else if (currentUser.addresses.length === 1) {
+            // If it's the first address, set as default
+            addressData.default = true;
+        }
+        
+        // Save user
+        localStorage.setItem('pioraUser', JSON.stringify(currentUser));
+        
+        // Update UI
+        renderAddresses();
+        
+        // Close modal
+        addressModal.hide();
+        
+        showToast('Address saved successfully');
+    });
+    
+    // Render addresses
+    function renderAddresses() {
+        addressList.innerHTML = '';
+        deliveryAddress.innerHTML = '<option value="">Select Address</option>';
+        
+        if (!currentUser || !currentUser.addresses.length) {
+            addressList.innerHTML = '<div class="col-12 text-center py-4"><p>No addresses saved yet</p></div>';
+            return;
+        }
+        
+        currentUser.addresses.forEach(address => {
+            // Add to profile address list
+            const addressCard = document.createElement('div');
+            addressCard.className = 'col-md-6 mb-3';
+            addressCard.innerHTML = `
+                <div class="address-card ${address.default ? 'default' : ''}">
+                    <h5>${address.type}</h5>
+                    <p>${address.address}<br>${address.city}, ${address.pincode}</p>
+                    <div class="address-actions">
+                        <button class="btn btn-sm btn-outline-primary me-1 edit-address" data-id="${address.id}">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger delete-address" data-id="${address.id}">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+            addressList.appendChild(addressCard);
+            
+            // Add to delivery address dropdown
+            const option = document.createElement('option');
+            option.value = address.id;
+            option.textContent = `${address.type}: ${address.address}, ${address.city} - ${address.pincode}`;
+            if (address.default) option.selected = true;
+            deliveryAddress.appendChild(option);
+        });
+    }
+    
+    // Edit address
+    addressList.addEventListener('click', function(e) {
+        if (e.target.closest('.edit-address')) {
+            const addressId = e.target.closest('.edit-address').dataset.id;
+            const address = currentUser.addresses.find(addr => addr.id === addressId);
+            
+            if (address) {
+                document.getElementById('addressId').value = address.id;
+                document.getElementById('addressType').value = address.type;
+                document.getElementById('addressText').value = address.address;
+                document.getElementById('addressCity').value = address.city;
+                document.getElementById('addressPincode').value = address.pincode;
+                document.getElementById('setDefaultAddress').checked = address.default;
+                
+                document.getElementById('addressModalTitle').textContent = 'Edit Address';
+                addressModal.show();
+            }
+        }
+    });
+    
+    // Delete address
+    addressList.addEventListener('click', function(e) {
+        if (e.target.closest('.delete-address')) {
+            const addressId = e.target.closest('.delete-address').dataset.id;
+            currentUser.addresses = currentUser.addresses.filter(addr => addr.id !== addressId);
+            
+            // If we deleted the default, set first as default
+            if (currentUser.addresses.length > 0 && !currentUser.addresses.some(addr => addr.default)) {
+                currentUser.addresses[0].default = true;
+            }
+            
+            localStorage.setItem('pioraUser', JSON.stringify(currentUser));
+            renderAddresses();
+            showToast('Address deleted');
+        }
+    });
+    
+    // Place order
+    placeOrderBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        if (!currentUser) {
+            loginRequiredMessage.style.display = 'block';
+            return;
+        }
+        
+        if (cart.length === 0) {
+            showToast('Your cart is empty');
+            return;
+        }
+        
+        // Create order
+        const order = {
+            id: 'ORD_' + Date.now(),
+            date: new Date().toISOString(),
+            items: [...cart],
+            address: deliveryAddress.value,
+            status: 'pending',
+            paymentMethod: document.querySelector('input[name="payment"]:checked').id
+        };
+        
+        // Add to user's order history
+        currentUser.orders.push(order);
+        localStorage.setItem('pioraUser', JSON.stringify(currentUser));
+        
+        // Clear cart
+        cart = [];
+        localStorage.setItem('pioraCart', JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+        
+        // Show success message
+        showToast('Order placed successfully!');
+        
+        // Redirect to profile orders
+        document.querySelector('#profile-orders .nav-link').click();
+        profileSection.style.display = 'block';
+        window.scrollTo(0, profileSection.offsetTop);
+    });
+    
+    // Login from order section
+    loginFromOrderBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        loginModal.style.display = 'flex';
+    });
+    
+    // Profile navigation
+    document.querySelectorAll('.profile-sidebar .nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Hide all tabs
+            document.querySelectorAll('.profile-tab').forEach(tab => {
+                tab.style.display = 'none';
+            });
+            
+            // Show selected tab
+            const targetId = this.getAttribute('href').substring(1);
+            document.getElementById(targetId).style.display = 'block';
+            
+            // Update active nav link
+            document.querySelectorAll('.profile-sidebar .nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+    
+    // Show profile section when navigating to profile
+    document.querySelectorAll('a[href="#profile"]').forEach(link => {
+        link.addEventListener('click', function() {
+            profileSection.style.display = 'block';
+            window.scrollTo(0, profileSection.offsetTop);
+        });
+    });
+    
+    // Initialize addresses
+    if (currentUser) {
+        renderAddresses();
+    }
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
